@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aqua; /* For debugging */
+}
+
+.gridItem {
+    font-family: 'Courier New', Courier, monospace;
+    
+    line-height: 20pt;
+    
+    border: 0;
+    
+    overflow:scroll;
+    
+    -ms-overflow-style: none;  /* Hides scrollbar for IE and Edge */
+    scrollbar-width: none;  /* Hides scrollbar for Firefox */
+}
+
+.gridItem::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Safari and Opera*/
+}
+
+#mainPage > .gridItem {
+    height: 100vh;
+}
+
+#mainPage > #leftSide {
+    padding-right: 5pt;
+}
+
+#mainPage > #rightSide {
+    padding-left: 5pt;
+}
+
+#subPage > #leftSideTop {
+    height: 20vh;
+    align-content: center;
+}
+
+#subPage > #leftSide {
+    height: 60vh;
+}
+
+#subPage > #leftSideBottom {
+    height: 20vh;
+}
+
+#subPage > #rightSideTop {
+    height: 20vh;
+    align-content: center;
+}
+
+#subPage > #rightSide {
+    height: 60vh;
+}
+
+#subPage > #rightSideBottom {
+    height: 20vh;
+}
+
+#leftSideTop {
+    text-align: end;
+    background-color: black;
+    color: white;
+    padding-left: 15%;
+}
+
+#leftSide {
+    text-align: end;
+    background-color: black;
+    color: white;
+    padding-left: 15%;
+}
+
+#leftSideBottom {
+    text-align: end;
+    background-color: black;
+    color: white;
+    padding-left: 15%;
+}
+
+#leftSide > .theoryText {
+    padding-left: 20%;
+    padding-right: 5pt;
+}
+
+#rightSideTop {
+    text-align: start;
+    background-color: white;
+    color: black;
+    padding-right: 15%;
+}
+
+#rightSide {
+    text-align: start;
+    background-color: white;
+    color: black;
+    padding-right: 15%;
+}
+
+#rightSideBottom {
+    text-align: start;
+    background-color: white;
+    color: black;
+    padding-right: 15%;
+}
+
+#rightSide > .theoryText {
+    padding-right: 20%;
+    padding-left: 5pt;
+}
+
+.theoryText {
+    text-align: justify;
+}
+
+.iDont {
+    font-size: 3em;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
