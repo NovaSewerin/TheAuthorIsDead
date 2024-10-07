@@ -136,5 +136,11 @@ p {
 
 .link {
     text-decoration: none;
+    text-decoration: underline;
+    color: inherit;
+}
+
+.hiddenLink {
+    text-decoration: none;
     color: inherit;
 }
